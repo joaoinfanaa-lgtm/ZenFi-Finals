@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: zenfi
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python servidor_zenfi_whatsapp.py
+    healthCheckPath: /healthz
